@@ -1,28 +1,25 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <body>
-
 <h2>task001_form</h2>
 
-
 <form >
-  <label for="a">First number:</label><br>
-  <input type="number" id="a" name="a" value="0">
-  
-  <br><br>
-  
-  <label for="b">Second number:</label><br>
-  <input type="number" id="b" name="b" value="0">
-    
-  <br><br>
- 
-  <button type="button" onclick =
-  " document.getElementById('demo').innerHTML = parseInt(a.value) + parseInt(b.value);">Sum
-  </button>
-  
-</form>
+  <label for="number_1">First number:</label><br>
+  <input type="number" id="number_1" name="number_1" value="10">
+    <br><br>
+    <label for="number_2">Second number:</label><br>
+  <input type="number" id="number_2" name="number_2" value="10">
+      <br><br>
+  <button type="button" onclick="onCliclHandler()">Sum
+     </button>
+  </form>
+      
+<p id="demo"></p>
 
-<p id='demo'></p>
+<script src="script1.js">
+
+
+ </script>
 
 
 </body>
