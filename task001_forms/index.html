@@ -4,23 +4,32 @@
 <h2>task001_form</h2>
 
 <form >
-  <label for="number_1">First number:</label><br>
+    <label for="number_1">First number:</label><br>
   <input type="number" id="number_1" name="number_1" value="10">
     <br><br>
+    
     <label for="number_2">Second number:</label><br>
   <input type="number" id="number_2" name="number_2" value="10">
-      <br><br>
-  <button type="button" onclick="onCliclHandler()">Sum
+     <br><br>
+     
+     <label for="operator">Choose an operator:</label>
+  <select id="operator" name="operator">
+    <option value="1">Addition</option>
+    <option value="2">Subtraction</option>
+    <option value="3">Multiply</option>
+    <option value="4">Divide</option> 
+  </select>     
+</form>
+     <br>
+         
+<button type="button"onclick="onClickHandler()">Solve
      </button>
-  </form>
-      
-<p id="demo"></p>
+     
+<p id="demo">result</p>
 
-<script src="script1.js">
+<script src="script2.js">
 
-
- </script>
-
+</script>
 
 </body>
 </html>
