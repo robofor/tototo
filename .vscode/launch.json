@@ -5,10 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-chrome",
+            "type": "pwa-node",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\ggg\\uuuu\\task001_forms\\index.html"
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\example_1\\index.html",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
         }
     ]
 }
