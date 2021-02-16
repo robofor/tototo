@@ -1,15 +1,17 @@
 {
-  "name": "express.js",
+  "name": "work",
   "version": "1.0.0",
-  "description": "",
+  "description": "example",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "alex",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "underscore": "^1.12.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
