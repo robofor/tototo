@@ -1,7 +1,7 @@
 'use strict';
 // средство ес6:блок левых обьявлений
 const sentences = [
-    {subject: 'JavaScript', verb: 'oooon', object: 'great' },
+    {subject: 'JavaScript', verb: 'is cool', object: 'great' },
     {subject: 'Elephants', verb: 'are', object: 'large'},
 ];
 //средство ес 6 - деструкторизация объекта
