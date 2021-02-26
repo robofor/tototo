@@ -27,7 +27,7 @@
         // размешение ставок
         const bets = {crown: 0,anchor: 0, heart: 0, spade: 0, club: 0, diamond: 0};
         let totalBet = rand(1, funds);
-        {if (totalBet === 7) {
+        if (totalBet === 7) {
             totalBet = funds;
             bets.heart = totalBet;
         } else {
@@ -38,7 +38,7 @@
             let face = randFace();
             bets[face] = bets[face] + bet;
             remaining = remaining - bet;
-        } while (remaining > 0)};
+        } while (remaining > 0);
     }
 
     funds = funds - totalBet;
@@ -58,7 +58,7 @@
         let winnings = 0;
         for (let die = 0; die < hand.length; die++) {
             let face = hand[die];
-            {if (bets[face] > 0) winnings = winnings + bets[face]};
+            if (bets[face] > 0) {winnings = winnings + bets[face]};
         }
         funds = funds + winnings;
 
