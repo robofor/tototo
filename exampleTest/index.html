@@ -21,7 +21,7 @@
     while (funds > 1 && funds < 100) {
         round++;
 
-        console.log(`\round ${round}:`);
+        console.log(`round ${round}:`);
         console.log(`\tstarting funds: ${funds}p`);
 
         // размешение ставок
@@ -32,18 +32,18 @@
             bets.crown = totalBet;
         } else {
             if (totalBet === 7) {
-            totalBet = funds;
-            bets.heart = totalBet;
+                totalBet = funds;
+                bets.heart = totalBet;
             } else {
                 console.log( "Здесь нет никаких суеверий!");
                 let remaining = totalBet;
                 // распределение всех ставок
                 do {
-                let bet = rand(1, remaining);
-                let face = randFace();
-                bets[face] = bets[face] + bet;
-                remaining = remaining - bet;
-            } while (remaining > 0);
+                     let bet = rand(1, remaining);
+                    let face = randFace();
+                    bets[face] = bets[face] + bet;
+                    remaining = remaining - bet;
+                } while (remaining > 0);
         }
 
     }
