@@ -27,6 +27,16 @@
         }
 
         getGreeting();
+
+        function f(o) {
+            o.message = `Изменено в f (предыдущее значение: '${o.message}')`;
+        }
+        let o = {
+            message: "Начальное значение"
+        };
+        console.log(`Перед вызовом f: o.message = "${o.message}"`);
+        f(o);
+        console.log(`После вызова f: o.message = "${o.message}"`);
                         
         </script>
     
